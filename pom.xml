@@ -11,7 +11,7 @@
         <module>springcloud-config</module>
         <module>springcloud-eureka</module>
         <module>springcloud-gateway</module>
-        <module>springcloud-oauth2.0</module>
+        <module>springcloud-oauth</module>
     </modules>
 
     <!--spring boot version-->

@@ -1,0 +1,17 @@
+server:
+  port: 6100
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaoquan1994/springcloud
+          searchPaths: /**/springcloud-config/src/main/resources/dev
+          username:
+          password:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6000/eureka

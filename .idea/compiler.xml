@@ -14,7 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springcloud-common" target="1.5" />
+      <module name="springcloud-common" target="1.8" />
       <module name="springcloud-config" target="1.8" />
       <module name="springcloud-eurake" target="1.8" />
       <module name="springcloud-gateway" target="1.8" />
@@ -24,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud-common" options="-parameters" />
       <module name="springcloud-config" options="-parameters" />
       <module name="springcloud-eurake" options="-parameters" />
       <module name="springcloud-gateway" options="-parameters" />

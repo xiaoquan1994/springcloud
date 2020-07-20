@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springcloud-oauth
+  cloud:
+    config:
+      profile: service
+      uri: http://127.0.0.1:6100
+      label: dev
+      fail-fast: true
