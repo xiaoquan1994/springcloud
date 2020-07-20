@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springcloud-eureka
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8000/eureka
+    #无需维护服务实例（因为本身是注册中心）
+    fetch-registry: false
+    #不像注册中心注册自己（因为本身是注册中心）
+    register-with-eureka: false

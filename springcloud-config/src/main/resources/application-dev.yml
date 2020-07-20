@@ -1,11 +1,14 @@
 server:
-  port: 6100
+  port: 8100
 spring:
   application:
     name: springcloud-config
   cloud:
     config:
       server:
+        #读取本地的配置
+        #native:
+          #search-locations: classpath:/dev/
         git:
           uri: https://github.com/xiaoquan1994/springcloud
           searchPaths: /**/springcloud-config/src/main/resources/dev
@@ -14,4 +17,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:6000/eureka
+      defaultZone: http://127.0.0.1:8000/eureka

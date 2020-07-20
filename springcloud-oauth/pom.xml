@@ -5,7 +5,7 @@
     <artifactId>springcloud-oauth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <parent>
-        <groupId>com.test</groupId>
+        <groupId>com.springcloud</groupId>
         <artifactId>springcloud-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -17,7 +17,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
     </dependencies>
 </project>
