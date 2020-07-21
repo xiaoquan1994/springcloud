@@ -6,17 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-user" />
-        <module name="springcloud-oauth2.0" />
-        <module name="springcloud-eurake" />
         <module name="springcloud-config" />
-        <module name="springcloud-gateway" />
-      </profile>
-      <profile name="Annotation profile for springcloud-parent" enabled="true">
-        <sourceOutputDir name="../springcloud-user/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../springcloud-user/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-user" />
+        <module name="springcloud-eurake" />
         <module name="springcloud-user (1)" />
+        <module name="springcloud-gateway" />
+        <module name="springcloud-oauth2.0" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

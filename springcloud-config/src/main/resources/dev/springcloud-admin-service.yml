@@ -1,6 +1,6 @@
 server:
   #服务启动的端口号
-  port: 8500
+  port: 8300
 eureka:
   client:
     service-url:
