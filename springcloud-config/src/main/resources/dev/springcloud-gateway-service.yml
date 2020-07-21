@@ -9,6 +9,6 @@ spring:
     gateway:
       routes:
         - id: springcloud-gateway-service
-          uri: https://blog.csdn.net
+          uri: lb://springcloud-oauth-service
           predicates:
-            - Path=/meteor_93/**
+            - Path=/oauth/**
