@@ -12,6 +12,12 @@
         <module name="springcloud-config" />
         <module name="springcloud-gateway" />
       </profile>
+      <profile name="Annotation profile for springcloud-parent" enabled="true">
+        <sourceOutputDir name="../springcloud-user/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../springcloud-user/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-user (1)" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springcloud-common" target="1.8" />
@@ -21,6 +27,7 @@
       <module name="springcloud-oauth2.0" target="1.8" />
       <module name="springcloud-parent" target="1.8" />
       <module name="springcloud-user" target="1.8" />
+      <module name="springcloud-user (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -31,6 +38,7 @@
       <module name="springcloud-gateway" options="-parameters" />
       <module name="springcloud-oauth2.0" options="-parameters" />
       <module name="springcloud-user" options="-parameters" />
+      <module name="springcloud-user (1)" options="-parameters" />
     </option>
   </component>
 </project>

@@ -9,6 +9,7 @@
 
     <!--配置子模块的项目信息-->
     <modules>
+        <module>springcloud-admin</module>
         <module>springcloud-config</module>
         <module>springcloud-eureka</module>
         <module>springcloud-gateway</module>

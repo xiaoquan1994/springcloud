@@ -20,4 +20,5 @@ spring:
           filters:
             #gateway地址过滤，去掉/oauth/地址
             - StripPrefix=1
+            #gateway地址过滤，去掉/oauth/地址
             #- RewritePath=/oauth/(?<segment>.*), /$\{segment}

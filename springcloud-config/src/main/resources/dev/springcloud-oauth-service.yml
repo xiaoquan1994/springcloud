@@ -1,6 +1,6 @@
 server:
   #服务启动的端口号
-  port: 8300
+  port: 8400
 eureka:
   client:
     service-url:
@@ -8,4 +8,5 @@ eureka:
       defaultZone: http://127.0.0.1:8000/eureka
 feign:
   hystrix:
+    #开启熔断
     enabled: true
