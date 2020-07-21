@@ -7,6 +7,9 @@ eureka:
 spring:
   cloud:
     gateway:
+      globalcors:
+        default-filters:
+          - StripPrefix=1
       routes:
         - id: springcloud-gateway-service
           uri: lb://springcloud-oauth
