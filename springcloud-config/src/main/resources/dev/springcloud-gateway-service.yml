@@ -1,16 +1,23 @@
 server:
+  #服务启动的端口号
   port: 8200
 eureka:
   client:
     service-url:
+      #eureka的注册地址
       defaultZone: http://127.0.0.1:8000/eureka
 spring:
   cloud:
     gateway:
       routes:
-        - id: springcloud-gateway-service
+        #gateway的服务名称
+        - id: springcloud-oauth-service
+          #gateway服务跳转地址，lb支持负载均衡
           uri: lb://springcloud-oauth
+          #gateway跳转规则，只要已/oauth/开头的则进行跳转
           predicates:
             - Path=/oauth/**
           filters:
-            - RewritePath=/oauth/(?<segment>.*), /$\{segment}
+            #gateway地址过滤，去掉/oauth/地址
+            - StripPrefix=1
+            #- RewritePath=/oauth/(?<segment>.*), /$\{segment}

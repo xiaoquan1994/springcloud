@@ -1,9 +1,14 @@
 spring:
   application:
+    #服务名称
     name: springcloud-oauth
   cloud:
     config:
+      #读取文件名称：springcloud-oauth-service
       profile: service
+      #配置中心地址
       uri: http://127.0.0.1:8100
+      #读取git的分支，默认master
       label: dev
+      #是否启动快速失败功能，功能开启则优先判断config server是否正常
       fail-fast: true

@@ -1,7 +1,9 @@
 server:
+  #服务端口号
   port: 8100
 spring:
   application:
+    #服务名称
     name: springcloud-config
   cloud:
     config:
@@ -9,12 +11,16 @@ spring:
         #读取本地的配置
         #native:
           #search-locations: classpath:/dev/
+        #读取git地址
         git:
           uri: https://github.com/xiaoquan1994/springcloud
+          #查找配置文件的目录
           searchPaths: /**/springcloud-config/src/main/resources/dev
+          #git的密码，因为git的项目是public所以账号和密码为空
           username:
           password:
 eureka:
   client:
     service-url:
+      #eureka的注册地址
       defaultZone: http://127.0.0.1:8000/eureka
