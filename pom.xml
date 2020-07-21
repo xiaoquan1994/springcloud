@@ -6,6 +6,8 @@
     <artifactId>springcloud-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <!--配置子模块的项目信息-->
     <modules>
         <module>springcloud-config</module>
         <module>springcloud-eureka</module>

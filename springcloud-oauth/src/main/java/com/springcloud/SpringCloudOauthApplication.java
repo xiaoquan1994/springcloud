@@ -4,11 +4,13 @@ package com.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableFeignClients
-@EnableDiscoveryClient
-@SpringBootApplication
+@EnableHystrix//开启熔断
+@EnableFeignClients//开启openfeign声明式远程调用
+@EnableDiscoveryClient//开启eureka服务注册信息
+@SpringBootApplication//spring boot的启动类
 public class SpringCloudOauthApplication {
 
     public static void main(String[] args) {
