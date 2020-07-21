@@ -9,6 +9,6 @@ spring:
     gateway:
       routes:
         - id: springcloud-gateway-service
-          uri: lb://springcloud-oauth-service
+          uri: lb://springcloud-oauth
           predicates:
             - Path=/oauth/**
