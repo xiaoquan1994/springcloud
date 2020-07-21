@@ -22,19 +22,6 @@
     </parent>
 
 
-    <dependencies>
-        <!--spring boot web-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!--spring boot actuator-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-    </dependencies>
-
     <!--spring cloud version-->
     <dependencyManagement>
         <dependencies>
