@@ -1,4 +1,6 @@
 package com.springcloud.test.service;
 
-public class TestService {
+public interface TestService {
+
+    String test();
 }

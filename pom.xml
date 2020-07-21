@@ -7,11 +7,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>springcloud-common</module>
         <module>springcloud-config</module>
         <module>springcloud-eureka</module>
         <module>springcloud-gateway</module>
         <module>springcloud-oauth</module>
+        <module>springcloud-user</module>
     </modules>
 
     <!--spring boot version-->
