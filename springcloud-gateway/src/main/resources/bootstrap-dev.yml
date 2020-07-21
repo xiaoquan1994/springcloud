@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springcloud-gateway
+  cloud:
+    config:
+      profile: service
+      uri: http://127.0.0.1:8100
+      label: dev
+      fail-fast: true
