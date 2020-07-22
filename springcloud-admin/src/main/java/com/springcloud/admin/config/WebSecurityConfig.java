@@ -1,6 +1,5 @@
 package com.springcloud.admin.config;
 
-import de.codecentric.boot.admin.server.config.AdminServerProperties;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
