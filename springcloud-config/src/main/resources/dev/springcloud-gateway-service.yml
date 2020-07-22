@@ -7,6 +7,10 @@ eureka:
       #eureka的注册地址
       defaultZone: http://127.0.0.1:8000/eureka
 spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8300
   cloud:
     gateway:
       routes:
@@ -22,3 +26,11 @@ spring:
             - StripPrefix=1
             #gateway地址过滤，去掉/oauth/地址
             #- RewritePath=/oauth/(?<segment>.*), /$\{segment}
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

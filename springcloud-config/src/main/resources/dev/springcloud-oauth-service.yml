@@ -10,3 +10,16 @@ feign:
   hystrix:
     #开启熔断
     enabled: true
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8300
