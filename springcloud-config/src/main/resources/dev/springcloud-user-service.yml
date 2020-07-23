@@ -15,6 +15,13 @@ management:
     health:
       show-details: always
 spring:
+  zipkin:
+    base-url: http://zipkin:9411/
+    sender:
+      type: web
+    sleuth:
+      sampler:
+        probability: 1
   boot:
     admin:
       client:
