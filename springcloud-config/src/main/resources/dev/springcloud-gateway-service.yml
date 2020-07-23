@@ -39,8 +39,7 @@ spring:
                 methods:
                   - GET
                 exceptions:
-                  - java.io.IOException
-                  - java.util.concurrent.TimeoutException
+                  - java.lang.Exception
 management:
   endpoints:
     jmx:
