@@ -13,6 +13,7 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public String test() {
+        int a = 1/0;
         return userApi.test();
     }
 }

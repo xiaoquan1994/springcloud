@@ -36,6 +36,11 @@ spring:
                   - BAD_GATEWAY
                 #重试次数
                 retries: 6
+                methods:
+                  - GET
+                exceptions:
+                  - java.io.IOException
+                  - java.util.concurrent.TimeoutException
 management:
   endpoints:
     jmx:
