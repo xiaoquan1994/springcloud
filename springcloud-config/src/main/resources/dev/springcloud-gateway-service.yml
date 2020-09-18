@@ -6,11 +6,6 @@ eureka:
     service-url:
       #eureka的注册地址
       defaultZone: http://127.0.0.1:8000/eureka
-spring:
-  boot:
-    admin:
-      client:
-        url: http://127.0.0.1:8300
   cloud:
     gateway:
       routes:

@@ -14,15 +14,11 @@ management:
   endpoint:
     health:
       show-details: always
-spring:
-  zipkin:
-    base-url: http://127.0.0.1:9411/
-    sender:
-      type: web
-    sleuth:
-      sampler:
-        probability: 1
-  boot:
-    admin:
-      client:
-        url: http://127.0.0.1:8300
+#spring:
+#  zipkin:
+#    base-url: http://127.0.0.1:9411/
+#    sender:
+#      type: web
+#    sleuth:
+#      sampler:
+#        probability: 1
