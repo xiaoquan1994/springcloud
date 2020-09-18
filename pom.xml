@@ -24,7 +24,6 @@
         <version>2.3.1.RELEASE</version>
     </parent>
 
-
     <!--spring cloud version-->
     <dependencyManagement>
         <dependencies>
